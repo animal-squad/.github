@@ -1,7 +1,7 @@
 ---
 name: '디자인 수정'
 about: '디자인 변경 요청'
-title: '디자인 수정: [디자인 변경 내용]'
+title: 'Style: [디자인 변경 내용]'
 labels: '디자인 수정'
 assignees: ''
 ---
