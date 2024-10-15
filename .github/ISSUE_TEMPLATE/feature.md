@@ -1,7 +1,7 @@
 ---
 name: '기능 추가'
 about: '새로운 기능 추가 요청'
-title: '기능 요청: [기능 이름]'
+title: 'Feat: [기능 이름]'
 labels: '기능 추가'
 assignees: ''
 ---
