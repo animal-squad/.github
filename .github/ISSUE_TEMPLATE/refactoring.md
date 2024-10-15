@@ -1,7 +1,7 @@
 ---
 name: '리팩토링'
 about: '코드 리팩토링 작업 요청'
-title: '리팩토링: [리팩토링 내용]'
+title: 'Refactor: [리팩토링 내용]'
 labels: '리팩토링'
 assignees: ''
 ---
