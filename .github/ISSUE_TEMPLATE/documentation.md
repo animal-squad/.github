@@ -1,7 +1,7 @@
 ---
 name: '문서 작업'
 about: '문서 수정 및 추가 요청'
-title: '문서 작업: [문서 이름]'
+title: 'Docs: [문서 이름]'
 labels: '문서 작업'
 assignees: ''
 ---
