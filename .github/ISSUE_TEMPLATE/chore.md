@@ -1,7 +1,7 @@
 ---
 name: '정리 작업'
 about: '코드 또는 파일 정리 작업'
-title: '정리: [정리 내용]'
+title: 'Chore: [정리 내용]'
 labels: '정리'
 assignees: ''
 ---
