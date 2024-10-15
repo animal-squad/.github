@@ -1,7 +1,7 @@
 ---
 name: '테스트'
 about: '테스트 추가 또는 리팩토링 요청'
-title: '테스트: [테스트 내용]'
+title: 'Test: [테스트 내용]'
 labels: '테스트'
 assignees: ''
 ---
