@@ -1,7 +1,7 @@
 ---
 name: '빌드 설정'
 about: '빌드 관련 설정 또는 패키지 매니저 수정 요청'
-title: '빌드: [빌드 내용]'
+title: 'Build: [빌드 내용]'
 labels: '빌드'
 assignees: ''
 ---
