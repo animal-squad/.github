@@ -1,7 +1,7 @@
 ---
 name: '버그 수정'
 about: '버그 보고 및 수정 요청'
-title: '버그 수정: [버그 이름]'
+title: 'Fix: [버그 이름]'
 labels: '버그 수정'
 assignees: ''
 ---
