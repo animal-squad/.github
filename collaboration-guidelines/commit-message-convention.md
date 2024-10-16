@@ -1,4 +1,4 @@
-적용 예시는 [여기](https://github.com/ktb-23/.github/blob/main/collaboration-guidelines/example/commit-message-convention.md)서 확인 가능합니다
+적용 예시는 [여기](https://github.com/animal-squad/.github/blob/main/collaboration-guidelines/example/commit-message-convention.md)서 확인 가능합니다
 
 # 목표
 
