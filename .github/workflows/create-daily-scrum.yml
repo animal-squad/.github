@@ -14,9 +14,24 @@ jobs:
     - name: Send Notification to Discord
       run: |
         DATE=$(LC_TIME=ko_KR.UTF-8 date +'%y.%m.%d(%a)' -d '9 hours')
+        DAY=$(date -u -d '9 hours' +'%a')
+
+        # 영어 요일을 한글로 변환
+        case $DAY in
+          Mon) DAY_KOR="월" ;;
+          Tue) DAY_KOR="화" ;;
+          Wed) DAY_KOR="수" ;;
+          Thu) DAY_KOR="목" ;;
+          Fri) DAY_KOR="금" ;;
+          Sat) DAY_KOR="토" ;;
+          Sun) DAY_KOR="일" ;;
+        esac
+
+        DATE=$(echo "$DATE" | sed "s/($DAY)/($DAY_KOR)/")
         DISCORD_WEBHOOK_URL=${{ secrets.DISCORD_DAILY_WEBHOOK_URL }}
         MESSAGE="${DATE} 데일리 스크럼"
         PAYLOAD=$(echo "{\"content\": \"${MESSAGE}\"}")
+        
         curl -H "Content-Type: application/json" \
              -d "$PAYLOAD" \
              $DISCORD_WEBHOOK_URL
