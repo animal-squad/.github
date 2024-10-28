@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: Send Notification to Discord
       run: |
-        DATE=$(date +'%y.%m.%d(%a)' -d '9 hours')
+        DATE=$(LC_TIME=ko_KR.UTF-8 date +'%y.%m.%d(%a)' -d '9 hours')
         DISCORD_WEBHOOK_URL=${{ secrets.DISCORD_DAILY_WEBHOOK_URL }}
         MESSAGE="${DATE} 데일리 스크럼"
         PAYLOAD=$(echo "{\"content\": \"${MESSAGE}\"}")
