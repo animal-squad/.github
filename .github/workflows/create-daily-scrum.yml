@@ -1,0 +1,22 @@
+name: Create Daily Scrum Template Every Day
+
+on:
+  schedule:
+    # 매일 오전 7시(KST)에 실행 (UTC 10시). github action cron은 정각이 보장되지 않아 여유 시간을 주어야 함
+    - cron: '0 22 * * 1-6'
+  workflow_dispatch:
+
+jobs:
+  create-md-file:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Send Notification to Discord
+      run: |
+        DATE=$(date +'%y.%m.%d(%a)' -d '9 hours')
+        DISCORD_WEBHOOK_URL=${{ secrets.DISCORD_DAILY_WEBHOOK_URL }}
+        MESSAGE="${DATE} 데일리 스크럼"
+        PAYLOAD=$(echo "{\"content\": \"${MESSAGE}\"}")
+        curl -H "Content-Type: application/json" \
+             -d "$PAYLOAD" \
+             $DISCORD_WEBHOOK_URL
