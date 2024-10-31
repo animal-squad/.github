@@ -36,9 +36,7 @@ jobs:
         RESPONSE=$(curl -X POST -H "Content-Type: application/json" \
              -d "$PAYLOAD" \
              $DISCORD_WEBHOOK_URL)
-        echo "RESPONSE: $RESPONSE"
         MESSAGE_ID=$(echo $RESPONSE | jq -r '.id')
-        echo "MESSAGE_ID: $MESSAGE_ID"
         
         echo "message_id=$MESSAGE_ID" >> $GITHUB_OUTPUT
   
@@ -54,7 +52,9 @@ jobs:
           -H "Authorization: Bot $DISCORD_BOT_TOKEN" \
           -H "Content-Type: application/json" \
           -d "{\"name\": \"$THREAD_NAME\", \"auto_archive_duration\": 1440}")
+        echo "RESPONSE: $RESPONSE"
         THREAD_ID=$(echo $RESPONSE | jq -r '.id')
+        echo "THREAD_ID: $THREAD_ID"
         
         echo "thread_id=${THREAD_ID}" >> $GITHUB_OUTPUT
     
