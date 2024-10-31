@@ -38,9 +38,10 @@ jobs:
              $DISCORD_WEBHOOK_URL)
         MESSAGE_ID=$(echo $RESPONSE | jq -r '.id')
         
-        echo "::set-output name=message_id::$MESSAGE_ID"
+        echo "message_id=${MESSAGE_ID}" >> $GITHUB_OUTPUT
   
     - name: Create Thread based on Message
+      id: create_thread
       if: steps.send_notification.outputs.message_id != ''
       env:
         DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_DAILY_BOT_TOKEN }}
@@ -53,7 +54,8 @@ jobs:
           -H "Content-Type: application/json" \
           -d "{\"name\": \"$THREAD_NAME\", \"auto_archive_duration\": 1440}")
         THREAD_ID=$(echo $RESPONSE | jq -r '.id')
-        echo "::set-output name=thread_id::$THREAD_ID"
+        
+        echo "thread_id=${THREAD_ID}" >> $GITHUB_OUTPUT
     
     - name: Send Scrum Message to Thread
       if: steps.create_thread.outputs.thread_id != ''
