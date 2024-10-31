@@ -50,7 +50,9 @@ jobs:
         THREAD_NAME="${DATE} 데일리 스크럼 스레드"
         RESPONSE=$(curl -X POST "https://discord.com/api/v10/channels/$DISCORD_CHANNEL_ID/messages/$MESSAGE_ID/threads" \
           -H "Authorization: Bot $DISCORD_BOT_TOKEN" \
+          -H "User-Agent: DiscordBot (https://github.com/animal-squad, 1.0.0)" \
           -H "Content-Type: application/json" \
+          
           -d "{\"name\": \"$THREAD_NAME\", \"auto_archive_duration\": 1440}")
         echo "RESPONSE: $RESPONSE"
         THREAD_ID=$(echo $RESPONSE | jq -r '.id')
@@ -70,5 +72,6 @@ jobs:
         # 스레드에 메시지 전송
         curl -X POST "https://discord.com/api/v10/channels/$THREAD_ID/messages" \
           -H "Authorization: Bot $DISCORD_BOT_TOKEN" \
+          -H "User-Agent: DiscordBot (https://github.com/animal-squad, 1.0.0)" \
           -H "Content-Type: application/json" \
           -d "{\"content\": \"$SCRUM_MESSAGE\"}"
