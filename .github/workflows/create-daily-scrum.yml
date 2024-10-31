@@ -29,7 +29,7 @@ jobs:
         esac
 
         DATE=$(echo "$DATE" | sed "s/($DAY)/($DAY_KOR)/")
-        DISCORD_WEBHOOK_URL=${{ secrets.DISCORD_DAILY_WEBHOOK_URL }}
+        DISCORD_WEBHOOK_URL="${{ secrets.DISCORD_DAILY_WEBHOOK_URL }}?wait=true"
         MESSAGE="${DATE} 데일리 스크럼"
         PAYLOAD=$(echo "{\"content\": \"${MESSAGE}\"}")
         
