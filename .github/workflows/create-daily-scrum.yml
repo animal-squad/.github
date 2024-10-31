@@ -12,6 +12,7 @@ jobs:
     
     steps:
     - name: Send Notification to Discord
+      id: send_notification
       run: |
         DATE=$(LC_TIME=ko_KR.UTF-8 date +'%y.%m.%d(%a)' -d '9 hours')
         DAY=$(date -u -d '9 hours' +'%a')
@@ -32,6 +33,39 @@ jobs:
         MESSAGE="${DATE} 데일리 스크럼"
         PAYLOAD=$(echo "{\"content\": \"${MESSAGE}\"}")
         
-        curl -H "Content-Type: application/json" \
+        RESPONSE=$(curl -X POST -H "Content-Type: application/json" \
              -d "$PAYLOAD" \
-             $DISCORD_WEBHOOK_URL
+             $DISCORD_WEBHOOK_URL)
+        MESSAGE_ID=$(echo $RESPONSE | jq -r '.id')
+        
+        echo "::set-output name=message_id::$MESSAGE_ID"
+  
+    - name: Create Thread based on Message
+      if: steps.send_notification.outputs.message_id != ''
+      env:
+        DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_DAILY_BOT_TOKEN }}
+        DISCORD_CHANNEL_ID: "1296729268813828148"
+      run: |
+        MESSAGE_ID="${{ steps.send_notification.outputs.message_id }}"
+        THREAD_NAME="${DATE} 데일리 스크럼 스레드"
+        RESPONSE=$(curl -X POST "https://discord.com/api/v10/channels/${DISCORD_CHANNEL_ID}/messages/${MESSAGE_ID}/threads" \
+          -H "Authorization: Bot $DISCORD_BOT_TOKEN" \
+          -H "Content-Type: application/json" \
+          -d "{\"name\": \"$THREAD_NAME\", \"auto_archive_duration\": 1440}")
+        THREAD_ID=$(echo $RESPONSE | jq -r '.id')
+        echo "::set-output name=thread_id::$THREAD_ID"
+    
+    - name: Send Scrum Message to Thread
+      if: steps.create_thread.outputs.thread_id != ''
+      env:
+        DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_DAILY_BOT_TOKEN }}
+        THREAD_ID: ${{ steps.create_thread.outputs.thread_id }}
+      run: |
+        # 텍스트 내용 정의
+        SCRUM_MESSAGE="# [스크럼 제목] (선택)\n\n### 어제 한 일 :pencil:\n- :white_check_mark: 한 일 1\n- :white_check_mark: 한 일 2\n- :x: 트러블\n\n### 부가 설명 :pencil2:\n[사진]\n[영상]\n[링크]\n\n### 오늘 할 일 :clock2:\n- :white_check_mark: 할 일 1\n- :white_check_mark: 할 일 2\n\n### 추가 제안 사항 :raised_hand:\n- 제안 사항 1"
+        
+        # 스레드에 메시지 전송
+        curl -X POST "https://discord.com/api/v10/channels/$THREAD_ID/messages" \
+          -H "Authorization: Bot $DISCORD_BOT_TOKEN" \
+          -H "Content-Type: application/json" \
+          -d "{\"content\": \"$SCRUM_MESSAGE\"}"
