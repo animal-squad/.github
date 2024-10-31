@@ -52,7 +52,6 @@ jobs:
           -H "Authorization: Bot $DISCORD_BOT_TOKEN" \
           -H "User-Agent: DiscordBot (https://github.com/animal-squad, 1.0.0)" \
           -H "Content-Type: application/json" \
-          
           -d "{\"name\": \"$THREAD_NAME\", \"auto_archive_duration\": 1440}")
         echo "RESPONSE: $RESPONSE"
         THREAD_ID=$(echo $RESPONSE | jq -r '.id')
