@@ -51,20 +51,18 @@
 <br>
 
 ### Languages
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-  <img alt="HTML5" src ="https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/>
-  <img alt="CSS3" src ="https://img.shields.io/badge/CSS3-1572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white"/>
-  <img alt="JavaScript" src ="https://img.shields.io/badge/Javascript-F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=white"/>
-  <img alt="TypeScript" src ="https://img.shields.io/badge/TypeScript-3178C6.svg?&style=for-the-badge&logo=TypeScript&logoColor=white"/>
-  <img alt="Java" src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/>
-  <img alt="Terraform" src ="https://img.shields.io/badge/Terraform-946CED.svg?&style=for-the-badge&logo=Terraform&logoColor=white"/>
-  <img alt="Python" src ="https://img.shields.io/badge/Python-FFD43B.svg?&style=for-the-badge&logo=Python&logoColor=white"/>
-</div>
 
+<img alt="HTML5" src ="https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/><img alt="CSS3" src ="https://img.shields.io/badge/CSS3-1572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white"/>
+<img alt="JavaScript" src ="https://img.shields.io/badge/Javascript-F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=white"/>
+<img alt="TypeScript" src ="https://img.shields.io/badge/TypeScript-3178C6.svg?&style=for-the-badge&logo=TypeScript&logoColor=white"/>
+<img alt="Java" src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/>
+<img alt="Terraform" src ="https://img.shields.io/badge/Terraform-946CED.svg?&style=for-the-badge&logo=Terraform&logoColor=white"/>
+<img alt="Python" src ="https://img.shields.io/badge/Python-FFD43B.svg?&style=for-the-badge&logo=Python&logoColor=white"/>
 
 <br>
 
 ### Technologies
+
 <img alt="Git" src ="https://img.shields.io/badge/Git-F05032.svg?&style=for-the-badge&logo=Git&logoColor=white"/><img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=Github&logoColor=white"/>
 <img alt="Discord" src ="https://img.shields.io/badge/Discord-5865F2.svg?&style=for-the-badge&logo=Discord&logoColor=white"/>
 <img alt="AWS" src ="https://img.shields.io/badge/AWS-232F3E.svg?&style=for-the-badge&logo=amazonwebservices&logoColor=white"/>
