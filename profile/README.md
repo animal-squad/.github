@@ -20,13 +20,13 @@
   
 <Br>
 
-+ [박찬영(Ayaan.park)](https://github.com/DvaCode)
++ [이도경(roland.lee)](https://github.com/DvaCode)
   - Cloud
   - <ronald.lee> 작성해주세요!
 
 <Br>
 
-+ [고경훈(K.ko)](https://github.com/chsjen492)
++ [이미나(nina.lee)](https://github.com/chsjen492)
   - Back-end
   - <nina.lee> 작성해주세요!
 
