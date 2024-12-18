@@ -82,13 +82,14 @@
 <img alt="Sentry" src ="https://img.shields.io/badge/Sentry-362D59.svg?&style=for-the-badge&logo=sentry&logoColor=white"/>
 <img alt="Redis" src ="https://img.shields.io/badge/Redis-FF4438.svg?&style=for-the-badge&logo=redis&logoColor=white"/>
 <img alt="fastAPI" src ="https://img.shields.io/badge/fastapi-009688.svg?&style=for-the-badge&logo=fastapi&logoColor=white"/>
-<img alt="LangChain" src ="https://img.shields.io/badge/langchain-1C3C3C.svg?&style=for-the-badge&logo=langchain&logoColor=white"/>
 <img alt="OpenAI" src ="https://img.shields.io/badge/openai-412991.svg?&style=for-the-badge&logo=openai&logoColor=white"/>
+<img alt="JSON" src ="https://img.shields.io/badge/json-000000.svg?&style=for-the-badge&logo=json&logoColor=white"/>
+
+<!--
+<img alt="LangChain" src ="https://img.shields.io/badge/langchain-1C3C3C.svg?&style=for-the-badge&logo=langchain&logoColor=white"/>
 <img alt="Hugging Face" src ="https://img.shields.io/badge/hugging face-FFD21E.svg?&style=for-the-badge&logo=huggingface&logoColor=white"/>
 <img alt="Faiss" src ="https://img.shields.io/badge/faiss-0866FF.svg?&style=for-the-badge&logo=faiss&logoColor=white"/>
-<img alt="JSON" src ="https://img.shields.io/badge/json-000000.svg?&style=for-the-badge&logo=json&logoColor=white"/>
 <img alt="Selenium" src ="https://img.shields.io/badge/selenium-43B02A.svg?&style=for-the-badge&logo=selenium&logoColor=white"/>
-<!--
 <img alt="ELK" src ="https://img.shields.io/badge/ELK-005571.svg?&style=for-the-badge&logo=elasticstack&logoColor=white"/>
 <img alt="nGrinder" src ="https://img.shields.io/badge/nGrinder-03C75A.svg?&style=for-the-badge&logo=naver&logoColor=white"/>
 -->
