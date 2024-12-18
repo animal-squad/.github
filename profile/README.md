@@ -69,6 +69,7 @@
 <img alt="Docker" src ="https://img.shields.io/badge/Docker-4479A1.svg?&style=for-the-badge&logo=Docker&logoColor=white"/>
 <img alt="React" src ="https://img.shields.io/badge/React-61DAFB.svg?&style=for-the-badge&logo=React&logoColor=white"/>
 <img alt="Vite" src ="https://img.shields.io/badge/Vite-646CFF.svg?&style=for-the-badge&logo=Vite&logoColor=white"/>
+<img alt="Chrome extension" src ="https://img.shields.io/badge/Chrome extension-4285F4.svg?&style=for-the-badge&logo=Chromewebstore&logoColor=white"/>
 <img alt="NestJS" src ="https://img.shields.io/badge/NestJS-E0234E.svg?&style=for-the-badge&logo=nestjs&logoColor=white"/>
 <img alt="Prisma" src ="https://img.shields.io/badge/Prisma-2D3748.svg?&style=for-the-badge&logo=prisma&logoColor=white"/>
 <img alt="PostgreSQL" src ="https://img.shields.io/badge/Postgresql-4169E1.svg?&style=for-the-badge&logo=postgresql&logoColor=white"/>
