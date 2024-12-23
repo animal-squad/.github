@@ -71,7 +71,7 @@
 <img alt="TypeScript" src ="https://img.shields.io/badge/TypeScript-3178C6.svg?&style=for-the-badge&logo=TypeScript&logoColor=white"/> <img alt="NestJS" src ="https://img.shields.io/badge/NestJS-E0234E.svg?&style=for-the-badge&logo=nestjs&logoColor=white"/> <img alt="Prisma" src ="https://img.shields.io/badge/Prisma-2D3748.svg?&style=for-the-badge&logo=prisma&logoColor=white"/> <img alt="PostgreSQL" src ="https://img.shields.io/badge/Postgresql-4169E1.svg?&style=for-the-badge&logo=postgresql&logoColor=white"/> <img alt="Sentry" src ="https://img.shields.io/badge/Sentry-362D59.svg?&style=for-the-badge&logo=sentry&logoColor=white"/> <img alt="Redis" src ="https://img.shields.io/badge/Redis-FF4438.svg?&style=for-the-badge&logo=redis&logoColor=white"/>
 
 #### AI
-<img alt="Python" src ="https://img.shields.io/badge/Python-FFD43B.svg?&style=for-the-badge&logo=Python&logoColor=white"/> <img alt="fastAPI" src ="https://img.shields.io/badge/fastapi-009688.svg?&style=for-the-badge&logo=fastapi&logoColor=white"/> <img alt="OpenAI" src ="https://img.shields.io/badge/openai-412991.svg?&style=for-the-badge&logo=openai&logoColor=white"/>
+<img alt="Python" src ="https://img.shields.io/badge/Python-306998.svg?&style=for-the-badge&logo=Python&logoColor=white"/> <img alt="fastAPI" src ="https://img.shields.io/badge/fastapi-009688.svg?&style=for-the-badge&logo=fastapi&logoColor=white"/> <img alt="OpenAI" src ="https://img.shields.io/badge/openai-412991.svg?&style=for-the-badge&logo=openai&logoColor=white"/>
 
 <!--
  <img alt="JSON" src ="https://img.shields.io/badge/json-000000.svg?&style=for-the-badge&logo=json&logoColor=white"/>
