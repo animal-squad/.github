@@ -22,7 +22,11 @@
 
 + [이도경(roland.lee)](https://github.com/DvaCode)
   - Cloud
-  - <ronald.lee> 작성해주세요!
+  - Ansible playbook을 이용한 k8s cluster 구축 자동화
+  - 애플리케이션 배포 및 클러스터 내부 네트워크 설정
+  - 모니터링 시스템 구축 및 운영
+  - CI/CD 파이프라인 구축 및 배포 자동화
+  - Vault 구축 및 운영
 
 <Br>
 
