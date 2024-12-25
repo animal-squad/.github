@@ -110,7 +110,7 @@
 # ☁️ 아키텍처 <a name = "structure"></a>
 ### Infrastructure Arcitecture
 
-[사진]
+![image](https://github.com/user-attachments/assets/d2e80f28-8002-4bf2-ab36-65a48874dee3)
 
 - 
 - 
