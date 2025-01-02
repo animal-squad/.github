@@ -1,9 +1,6 @@
 name: Create Daily Scrum Template Every Day
 
 on:
-  schedule:
-    # 매일 오전 7시(KST)에 실행 (UTC 10시). github action cron은 정각이 보장되지 않아 여유 시간을 주어야 함
-    - cron: '0 22 * * 0-5'
   workflow_dispatch:
 
 jobs:
