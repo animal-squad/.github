@@ -112,11 +112,11 @@
 
 ![image](https://github.com/user-attachments/assets/d2e80f28-8002-4bf2-ab36-65a48874dee3)
 
-- 
-- 
-- 
-- 
-- 
+- K8s 클러스터는 Service Node 2개, Master Node, Devops Node, ELK Node 이렇게 총 5개로 구성되어 있습니다.
+- github에 있는 각 서비스의 Repo의 Main Branch에 push가 되면 Jenkins에 연결된 github webhook이 Jenkins로 전달되고 CI/CD Pipeline이 빌드됩니다. CI는 Kaniko를 통해서 build되고 build된 Image는 github package Registry에 저장됩니다. CD는 Kubernetes API Plugin을 통해서 지정된 build된 이미지를 배포합니다.
+- 모니터링 시스템은 Prometheus, Node-Exporter,Kube-states-metrics를 통해서 metrics를 수집하고 Grafana를 통해서 시각화할 수 있는 도구로 사용하였습니다. 
+- 로깅 시스템은 ELK Stack + Filebeat를 구성하였습니다. 각 노드에 있는 로그에 대한 데이터는 Filebeat를 통해서 수집하도록 하였고 Filebeat가 수집된 로그 데이터를 Logstash에 전송하면 Logstash에서는 logstash.yml에 정의된 filter를 통해서 필요한 로그 데이터를 추출하고 추출한 로그내용을 Elasticsearch로 전송하도록 설정하였습니다. Kibana를 통해서 수집한 로그에 대한 내용을 시각화합니다.
+- 장애 발생시 Prometheus confingmap.yaml에 있는 alerting_rule.yml에 따라서 Alertmanager를 통해서 알람이 오도록 설정하였습니다. 알람을 받는 수단은 Discord(Main 팀 소통 채널)로 구성하였습니다.
 
 <br>
 
