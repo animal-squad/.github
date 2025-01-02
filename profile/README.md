@@ -23,10 +23,12 @@
 + [이도경(roland.lee)](https://github.com/DvaCode)
   - Cloud
   - Ansible playbook을 이용한 k8s cluster 구축 자동화
-  - 애플리케이션 배포 및 클러스터 내부 네트워크 설정
-  - 모니터링 시스템 구축 및 운영
-  - CI/CD 파이프라인 구축 및 배포 자동화
-  - Vault 구축 및 운영
+  - 애플리케이션(FE, BE, AI) 배포 및 클러스터 내부 네트워크 설정
+  - 모니터링 시스템(Prometheus,Grafana) 구축 및 운영
+  - 알람 시스템(Alertmanager, Discord) 구축 및 운영
+  - CI/CD 파이프라인(Jenkins, Kaniko) 구축 및 배포 자동화
+  - Vault, Vault-Injector 구축 및 운영
+  - ELK Stack + Filebeat 구축 및 운영
 
 <Br>
 
