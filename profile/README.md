@@ -112,7 +112,7 @@
 # ☁️ 아키텍처 <a name = "structure"></a>
 ### Infrastructure Arcitecture
 
-![image](https://github.com/user-attachments/assets/d2e80f28-8002-4bf2-ab36-65a48874dee3)
+<img width="2653" alt="시스템 아키텍처 최종버전" src="https://github.com/user-attachments/assets/e91eb058-e8e8-4787-aee6-f655acb40ed9" />
 
 - K8s 클러스터는 Service Node 2개, Master Node, Devops Node, ELK Node 이렇게 총 5개로 구성되어 있습니다.
 - github에 있는 각 서비스의 Repo의 Main Branch에 push가 되면 Jenkins에 연결된 github webhook이 Jenkins로 전달되고 CI/CD Pipeline이 빌드됩니다. CI는 Kaniko를 통해서 build되고 build된 Image는 github package Registry에 저장됩니다. CD는 Kubernetes API Plugin을 통해서 지정된 build된 이미지를 배포합니다.
