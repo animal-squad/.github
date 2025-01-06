@@ -34,7 +34,10 @@
 
 + [이미나(nina.lee)](https://github.com/chsjen492)
   - Back-end
-  - <nina.lee> 작성해주세요!
+  - 전체 기능 API 설계 및 구현
+  - DB 스키마 설계(PostgreSQL)
+  - Google OAuth 2.0을 사용한 인증/인가 구현
+  - Sentry 모니터링 구축
 
 <Br>
 
