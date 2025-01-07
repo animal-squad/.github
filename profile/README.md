@@ -22,7 +22,7 @@
 
 + [이도경(roland.lee)](https://github.com/DvaCode)
   - Cloud
-  - Ansible Playbook으로 AWS 리소스에 K8s Cluster 구축 자동화
+  - Ansible Playbook으로 AWS 리소스에 K8s Cluster 구축 자동화 및 관리 총괄
   - 애플리케이션(FE, BE, AI) 배포 및 클러스터 내부 네트워크 설정
   - 모니터링 시스템(Prometheus,Grafana) 구축 및 운영
   - 알람 시스템(Alertmanager, Discord) 구축 및 운영
