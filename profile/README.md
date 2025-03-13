@@ -126,5 +126,7 @@
 <br>
 
 # 🚩 결과물 <a name = "outputs"></a>
-### 
-[사진]
+
+### Landing Page
+![image](https://github.com/user-attachments/assets/facd101d-b79e-4912-8156-f64cce2518ce)
+
