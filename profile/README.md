@@ -130,3 +130,17 @@
 ### Landing Page
 ![image](https://github.com/user-attachments/assets/facd101d-b79e-4912-8156-f64cce2518ce)
 
+### Bucket Page
+<img width="1512" alt="스크린샷 2024-12-23 오후 5 03 33" src="https://github.com/user-attachments/assets/515ffc1a-4b39-4de9-a359-db6ae184d7a2" />
+
+### Link Page
+<img width="1512" alt="스크린샷 2024-12-23 오후 5 05 27" src="https://github.com/user-attachments/assets/d7ebde08-da5f-4b5f-9656-e5c1bf549df6" />
+<img width="1512" alt="스크린샷 2024-12-23 오후 5 06 07" src="https://github.com/user-attachments/assets/e6342401-05a7-4d24-a26d-72a7b62e22cc" />
+<img width="1512" alt="스크린샷 2024-12-23 오후 5 06 56" src="https://github.com/user-attachments/assets/70d8a798-3698-421b-80ae-7fd772b74488" />
+
+### Bucket Inside Page
+<img width="1512" alt="스크린샷 2024-12-23 오후 5 07 27" src="https://github.com/user-attachments/assets/c6006502-d196-4e2c-b4b1-267615452de0" />
+<img width="1512" alt="스크린샷 2024-12-24 오전 10 36 23" src="https://github.com/user-attachments/assets/3054c297-bd9b-4c93-8922-a86044defaee" />
+
+### Chrome Extension
+<img width="300" alt="스크린샷 2024-12-23 오후 5 35 56" src="https://github.com/user-attachments/assets/38317ec7-84c3-4508-bdd0-a2126951d434" />
